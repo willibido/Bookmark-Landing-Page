@@ -55,13 +55,13 @@
 
 .heading-quaternary {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem; }
 
 .small-paragraph {
   color: #9194a1;
-  line-height: 2rem;
-  font-size: 1.6rem; }
+  line-height: 3.5rem;
+  font-size: 1.8rem; }
 
 .paragraph {
   color: #9194a1;
@@ -320,3 +320,5 @@ body {
   align-items: center;
   width: 100%;
   height: 80vh; }
+  .faq-section .faq__faq-list-box {
+    max-width: 60rem; }
