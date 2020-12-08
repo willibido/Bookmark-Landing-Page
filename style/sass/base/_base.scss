@@ -16,6 +16,9 @@ body {
     font-size: 1.8rem;
     position: relative;
     color: $darkblue-color;
+    
+    animation: show 2.5s ease;
+    animation-fill-mode: backwards;
 }
 
 .container {

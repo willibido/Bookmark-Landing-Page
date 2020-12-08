@@ -1,6 +1,7 @@
 // ========================
 //    FEATURES SECTION    |
-// =======================
+// ========================
+
 .features {
     width: 100%;
     display: flex;
@@ -8,8 +9,6 @@
     align-items: center;
     height: 90vh;
     position: relative;
-    animation: show 2.5s ease;
-    animation-fill-mode: backwards;
 
     &::after {
         content: "";
@@ -60,13 +59,14 @@
 
 // ==========================
 //    EXTENSIONS SECTION    |
-// =========================
+// ==========================
+
 .extensions {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10rem 0;
+    margin: 10rem 0 20rem 0;
 
     .extensions__cards-box {
         display: flex;
@@ -84,4 +84,19 @@
             transform: translateY(8rem);
         }
     }
+}
+
+// ===================
+//    FAQ SECTION    |
+// ===================
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+
+    
+
 }
