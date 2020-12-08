@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+// FONT-SIZE
+$font-size-small: 1.6rem;
+$font-size-medium: 1.8rem;
+
+.heading-primary {
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+.heading-secondary {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 2rem;
+}
+
+.paragraph {
+    color: $grayblue-color;
+    line-height: 3rem;
+}

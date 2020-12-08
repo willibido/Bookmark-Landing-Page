@@ -1,0 +1,11 @@
+{
+  "name": "boockmark-landing-page",
+  "version": "1.0.0",
+  "description": "Frontend mentor challenge (BEM practice)",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass -o style/css style/sass/main.scss -w -r"
+  },
+  "author": "Willi Bido (@willicoder)",
+  "license": "ISC"
+}
