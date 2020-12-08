@@ -15,6 +15,8 @@ browser tab and see your sites load instantly. Try it for free.
 Get it on Chrome
 Get it on Firefox
 
+=====================================================
+
 Features
 
 Our aim is to make it quick and easy for you to access your favourite websites. 
@@ -44,6 +46,8 @@ Easily share your bookmarks and collections with others. Create a shareable
 link that you can send at the click of a button.
 
 More Info
+
+=====================================================
 
 Download the extension
 

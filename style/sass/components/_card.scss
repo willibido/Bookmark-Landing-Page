@@ -1,0 +1,36 @@
+.card {
+    text-align: center;
+    padding: 2.5rem;
+    padding-top: 8rem;
+    border-radius: 1.2rem;
+    box-shadow: $shadow-medium;
+    position: relative;
+
+    &__img {
+        margin-bottom: 3rem;
+    }
+
+    &__datails {
+        font-size: $font-size-normal;
+        color: $grayblue-color;
+        margin-bottom: 4rem;
+    }
+
+    &__btn-box {
+        backface-visibility: hidden;
+
+        &::before {
+            content: "";
+            left: 0;
+            width: 100%;
+            position: absolute;
+            border-top: .5rem dotted $grayblue-color;
+            opacity: .3;
+        }
+
+        .btn {
+            margin-top: 3rem;
+            padding: 1.2rem 3.5rem;
+        }
+    }
+}

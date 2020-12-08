@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-// FONT-SIZE
-$font-size-small: 1.6rem;
-$font-size-medium: 1.8rem;
-
 .heading-primary {
     font-weight: 500;
     font-size: 5rem;
@@ -14,6 +10,13 @@ $font-size-medium: 1.8rem;
     font-weight: 500;
     font-size: 3rem;
     line-height: 2rem;
+}
+
+.heading-tertiary {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .paragraph {

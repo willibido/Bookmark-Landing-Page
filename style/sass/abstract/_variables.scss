@@ -1,6 +1,6 @@
-// =============|
+// ==============
 //     COLORS   |
-// =============|
+// =============
 
 $primary-color: hsl(231, 69%, 60%);
 $secondary-color: hsl(0, 94%, 66%);
@@ -8,3 +8,15 @@ $secondary-color: hsl(0, 94%, 66%);
 $light-gray-color: #eaecf0;
 $grayblue-color: hsl(229, 8%, 60%);
 $darkblue-color: hsl(229, 31%, 21%);
+
+
+// FONT-SIZE
+$font-size-normal: 1.5rem;
+$font-size-small: 1.6rem;
+$font-size-medium: 1.8rem;
+
+// ===============
+//     SHADOWS   |
+// ==============
+
+$shadow-medium: 0 1.5rem 2rem rgba($color: $grayblue-color, $alpha: .20);
