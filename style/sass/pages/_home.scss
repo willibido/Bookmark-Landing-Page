@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
     position: relative;
 
     &::after {
@@ -54,6 +53,14 @@
             }
 
         }
+
+        .hiden {
+            display: none;
+        }
+
+        .active {
+            display: flex;
+        }
     }
 }
 
@@ -66,7 +73,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10rem 0 20rem 0;
+    margin: 20rem 0 20rem 0;
 
     .extensions__cards-box {
         display: flex;
@@ -95,12 +102,29 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 80vh;
+    margin: 30rem 0 20rem 0;
 
     .faq__faq-list-box {
-        max-width: 60rem;
 
 
     }
+
+}
+
+// ===================
+//    NEWS-LETTER    |
+// ===================
+
+.news-letter {
+    background-color: $primary-color;
+    width: 100%;
+    height: 40vh;
+    color: #fff;
+    padding: 7rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }

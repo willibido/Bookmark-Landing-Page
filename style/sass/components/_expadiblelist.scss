@@ -1,0 +1,51 @@
+.list {
+    list-style: none;
+    width: 60rem;
+    
+    &__question-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        border-top: 1px solid rgba($grayblue-color, .3);
+        
+        &:last-child {
+            border-bottom: 1px solid rgba($grayblue-color, .3);
+        }
+
+        &__head {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
+            h4, i {
+                transition: all .3s ease;
+            }
+            
+            i {
+                color: $primary-color;
+                font-size: 2rem;
+                margin: 0 2rem;
+            }
+            
+            &:hover {
+                h4 {
+                    color: $secondary-color;
+                }
+            }
+        }
+
+        &__body {
+            margin-top: 3rem;
+        }
+    }
+
+    .closed {
+        display: none;
+    }
+
+    .expanded {
+        display: block;
+    }
+}

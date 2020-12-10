@@ -2,6 +2,27 @@
 //    ANIMATIONS    |
 // ==================
 
+.slide-from-left{
+    animation: slide-from-left .5s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+.slide-from-right{
+    animation: slide-from-right .5s ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes slide-from-right {
+    0% {
+        transform: translateX(30rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}
+
 @keyframes slide-from-right-hero-image {
     0% {
         transform: translateX(30rem);
