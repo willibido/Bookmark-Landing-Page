@@ -1,0 +1,49 @@
+// ============
+//    TABS    |
+// ============
+
+const tabs = document.querySelectorAll(".tab");
+const tabsContent = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetTab = e.target;
+        
+        tabs.forEach(tabs => {
+            tabs.classList.remove('active');
+        });
+
+        targetTab.classList.add('active');
+
+        tabsContent.forEach(tabContent => {
+            const tabCheck = function(tabContent){
+                tabsContent.forEach(tabContent => {
+                    tabContent.classList.remove('active');
+                    tabContent.classList.add('hiden');
+                });
+            }
+
+            if(targetTab.id == "tab1"){
+                tabCheck(tabContent);
+                tabsContent[0].querySelector('.tab-content__img-box').classList.add('slide-from-left');
+                tabsContent[0].querySelector('.tab-content__info').classList.add('slide-from-right');
+                tabsContent[0].classList.add('active');
+            }
+
+            if(targetTab.id == "tab2"){
+                tabCheck(tabContent);
+                tabsContent[1].querySelector('.tab-content__img-box').classList.add('slide-from-left');
+                tabsContent[1].querySelector('.tab-content__info').classList.add('slide-from-right');
+                tabsContent[1].classList.add('active');
+            }
+
+            if(targetTab.id == "tab3"){
+                tabCheck(tabContent);
+                tabsContent[2].querySelector('.tab-content__img-box').classList.add('slide-from-left');
+                tabsContent[2].querySelector('.tab-content__info').classList.add('slide-from-right');
+                tabsContent[2].classList.add('active');
+            }
+        })
+    })
+})
