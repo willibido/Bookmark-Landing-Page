@@ -47,3 +47,29 @@ tabs.forEach(tab => {
         })
     })
 })
+
+// =======================
+//    EXPANDABLE LIST    |
+// =======================
+
+const list = document.querySelectorAll('.list__question-item__head');
+
+list.forEach(question => {
+    question.addEventListener('click', () => {
+        question.nextElementSibling.classList.toggle('closed');
+        const arrow = question.childNodes[3];
+        
+        if(arrow.classList.contains('rotate-arrow')){
+            arrow.classList.remove('rotate-arrow');
+            arrow.classList.add('rotate-arrow-reverse');
+
+        } else {
+            arrow.classList.remove('rotate-arrow-reverse');
+            arrow.classList.add('rotate-arrow');
+        }
+        
+        question.nextElementSibling.classList.toggle('expanded');
+        question.nextElementSibling.classList.toggle('expand-list');
+        
+    });
+})

@@ -49,3 +49,7 @@
         display: block;
     }
 }
+
+.list > * {
+    transition: all .1s ease;
+}

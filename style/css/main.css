@@ -7,6 +7,35 @@
   animation: slide-from-right .5s ease-in-out;
   animation-fill-mode: backwards; }
 
+.rotate-arrow {
+  animation: rotate .2s ease-in-out;
+  animation-fill-mode: forwards;
+  color: #fa5757 !important; }
+
+.rotate-arrow-reverse {
+  animation: rotate-reverse .2s ease-in-out; }
+
+.expand-list {
+  animation: expand-list .2s ease-in-out; }
+
+@keyframes expand-list {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100; } }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(180deg); } }
+
+@keyframes rotate-reverse {
+  0% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0deg); } }
+
 @keyframes slide-from-right {
   0% {
     transform: translateX(30rem);
@@ -215,6 +244,9 @@ body {
     display: none; }
   .list .expanded {
     display: block; }
+
+.list > * {
+  transition: all .1s ease; }
 
 .tab {
   display: inline-block;
