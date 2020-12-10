@@ -35,6 +35,18 @@
     }
 }
 
+@keyframes levitate {
+    0% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(2rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);

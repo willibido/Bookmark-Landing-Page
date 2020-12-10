@@ -1,28 +1,37 @@
-.btn,
-.btn:visited,
-.btn:link {
-    display: inline-block;
-    padding: 1.5rem 2rem;
-    text-decoration: none;
+.btn {
+    &:visited,
+    &:link {
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: $font-size-normal;
+        border-radius: 0.4rem;
+        border: 2px solid transparent;
+        transition: all .2s ease;
+    
+        &:hover {
+            border-color: $darkblue-color;
+            box-shadow: 0 .5rem 1rem rgba($color: $grayblue-color, $alpha: .35);
+    
+            transform: translateY(-.2rem);
+        }
+    
+        &:active {
+            border-color: $darkblue-color;
+            box-shadow: 0 .2rem 1rem rgba($color: $grayblue-color, $alpha: .3);
+    
+            transform: translateY(.2rem);
+        }
+    }
+}
+
+.btn--input {
+    @extend .btn:link;
+    display: inline;
+    cursor: pointer;
+
     font-weight: 500;
-    font-size: $font-size-normal;
-    border-radius: 0.4rem;
-    border: 2px solid transparent;
-    transition: all .2s ease;
-
-    &:hover {
-        border-color: $darkblue-color;
-        box-shadow: 0 .5rem 1rem rgba($color: $grayblue-color, $alpha: .35);
-
-        transform: translateY(-.2rem);
-    }
-
-    &:active {
-        border-color: $darkblue-color;
-        box-shadow: 0 .2rem 1rem rgba($color: $grayblue-color, $alpha: .3);
-
-        transform: translateY(.2rem);
-    }
 }
 
 .btn--primary {
@@ -31,7 +40,7 @@
 
     &:hover {
         background-color: #fff;
-        border-color: $primary-color;
+        border-color: $primary-color !important;
         color: $primary-color;
     }
 }
@@ -42,7 +51,7 @@
 
     &:hover {
         background-color: #fff;
-        border-color: $secondary-color;
+        border-color: $secondary-color !important;
         color: $secondary-color;
     }
 }
