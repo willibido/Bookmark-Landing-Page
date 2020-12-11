@@ -8,8 +8,14 @@
     backface-visibility: hidden;
 
     &__img {
-        // transition: all 500ms cubic-bezier(0.310, 0.440, 0.445, 1.650);
         margin-bottom: 3rem;
+        backface-visibility: hidden;
+
+        img {
+            transition: all .5s ease;
+            opacity: 1;
+            backface-visibility: hidden;
+        }
     }
 
     &__datails {
@@ -19,7 +25,6 @@
     }
 
     &__btn-box {
-        backface-visibility: hidden;
 
         &::before {
             content: "";
@@ -38,15 +43,12 @@
 
     &:hover {
         .card__img {
-            animation: levitate 1.5s ease-in-out;
-            animation-iteration-count: infinite;
-            animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
-            animation-direction: normal;
-            animation-fill-mode: backwards;
+            img {
+                animation: levitate 1.5s ease-in-out;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+                animation-fill-mode: backwards;
+            }
         }
     }
 }
-
-.card > * {
-    transition: all 500ms cubic-bezier(0.165, 0.840, 0.440, 1.000) !important;
-} 

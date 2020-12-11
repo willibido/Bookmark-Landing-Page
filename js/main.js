@@ -70,6 +70,5 @@ list.forEach(question => {
         
         question.nextElementSibling.classList.toggle('expanded');
         question.nextElementSibling.classList.toggle('expand-list');
-        
     });
 })
