@@ -12,6 +12,12 @@
     animation-fill-mode: backwards;
 }
 
+.slide-from-up {
+    animation: slide-from-up 1.5s ease initial;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+
 .rotate-arrow {
     animation: rotate .2s ease-in-out;
     animation-fill-mode: forwards;
@@ -24,6 +30,11 @@
 
 .expand-list {
     animation: expand-list .2s ease-in-out;
+}
+
+.show {
+    animation: show 1s ease !important;
+    animation-fill-mode: backwards !important;
 }
 
 @keyframes expand-list {

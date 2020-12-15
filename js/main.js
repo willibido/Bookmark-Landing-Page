@@ -72,3 +72,23 @@ list.forEach(question => {
         question.nextElementSibling.classList.toggle('expand-list');
     });
 })
+
+// ===================
+//    MOBILE MENU    |
+// ===================
+
+const menuCloseIcon = document.querySelector(".menu__close-icon"),
+menuOpenIcon = document.querySelector(".menu__open-icon"),
+menu = document.querySelector(".menu");
+
+menuOpenIcon.addEventListener('click', () => {
+    menu.classList.add("show");
+    menu.classList.add("mobile");
+    menuOpenIcon.style.display = "none";
+});
+
+menuCloseIcon.addEventListener('click', () => {
+    menu.classList.remove("show");
+    menu.classList.remove("mobile");
+    menuOpenIcon.style.display = "block";
+});
