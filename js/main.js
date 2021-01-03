@@ -53,23 +53,37 @@ tabs.forEach(tab => {
 // =======================
 
 const list = document.querySelectorAll('.list__question-item__head');
+const bodyList = document.querySelectorAll('.list__question-item__body');
+const arrows = document.querySelectorAll('.fa-chevron-down');
 
 list.forEach(question => {
     question.addEventListener('click', () => {
-        question.nextElementSibling.classList.toggle('closed');
-        const arrow = question.childNodes[3];
+        bodyList.forEach(element => {
+            element.classList.remove('expanded');
+            element.classList.remove('expand-list');
+            element.classList.add('closed');
+
+            arrows.forEach(arrow => {
+                arrow.classList.remove('rotate-arrow');
+            })
+        })
         
+        const arrow = question.childNodes[3];
+
         if(arrow.classList.contains('rotate-arrow')){
             arrow.classList.remove('rotate-arrow');
             arrow.classList.add('rotate-arrow-reverse');
 
+            question.nextElementSibling.classList.remove('expanded');
+            question.nextElementSibling.classList.remove('expand-list');
+            question.nextElementSibling.classList.add('closed');
         } else {
             arrow.classList.remove('rotate-arrow-reverse');
             arrow.classList.add('rotate-arrow');
-        }
-        
-        question.nextElementSibling.classList.toggle('expanded');
-        question.nextElementSibling.classList.toggle('expand-list');
+
+            question.nextElementSibling.classList.add('expanded');
+            question.nextElementSibling.classList.add('expand-list');
+        }        
     });
 })
 
